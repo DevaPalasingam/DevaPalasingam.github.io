@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow: hidden
+}
+
+body {
+    align-items: center;
+    display: flex;
+    font-family: "Raleway", sans-serif;
+    justify-content: center
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit
+}
+a,
+a:link,
+a:active {
+    color: #000;
+    font-weight: 600;
+    text-decoration: none
+}
+a:hover {
+    border-bottom: 2px solid #0D29FE;
+    color: #000
+}
+
+.container, .mainText {
+	width: 100%;
+}
+
+.myName {
+	font-size: 5vw;
+	font-weight: bold;
+	color: black;
+}
+
+.myDescription {
+	font-size: 30px;
+}
