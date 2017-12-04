@@ -35,14 +35,16 @@ a:hover {
     color: #000
 }
 
-.container, .mainText {
+.container {
 	width: 100%;
 }
 
 .myName {
-	font-size: 5vw;
+	font-size: 7vw;
 	font-weight: bold;
 	color: black;
+	margin-bottom: 0;
+	margin-top: 0;
 }
 
 .myDescription {
