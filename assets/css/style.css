@@ -1,5 +1,7 @@
 * {
   box-sizing: border-box;
+  overflow: auto;
+
 }
 
 html,
@@ -8,14 +10,18 @@ body {
     margin: 0;
     padding: 0;
     width: 100%;
-    overflow: hidden
 }
 
 body {
     align-items: center;
     display: flex;
     font-family: "Raleway", sans-serif;
-    justify-content: center
+    justify-content: center;
+
+
+    background-image: url(../images/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 *,
@@ -35,6 +41,7 @@ a:hover {
     color: #000
 }
 
+
 .container {
 	width: 100%;
 }
@@ -43,10 +50,46 @@ a:hover {
 	font-size: 7vw;
 	font-weight: bold;
 	color: black;
+    text-shadow: 0 1px white;
 	margin-bottom: 0;
 	margin-top: 0;
 }
 
 .myDescription {
 	font-size: 30px;
+    color: black;
+    text-shadow: 0 1px white;
+}
+
+.raptorButton {
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    margin-top: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: black;
+}
+
+@media screen and (max-width: 350px) {
+    .myName {
+        margin-top: 420px;
+    }
+
+    .raptorButton {
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (min-width: 350px) and (max-width: 640px) {
+    .myName {
+        margin-top: 300px;
+    }
+
+    .raptorButton {
+        margin-bottom: 50px;
+    }
 }
