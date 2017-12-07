@@ -5,8 +5,8 @@
  */
 
 /*!
- * Generated using the Bootstrap Customizer (https://getbootstrap.com/docs/3.3/customize/?id=78661b36f4f1afac428eeba86a8c52cd)
- * Config saved to config.json and https://gist.github.com/78661b36f4f1afac428eeba86a8c52cd
+ * Generated using the Bootstrap Customizer (http://getbootstrap.com/docs/3.3/customize/?id=52d8335f5ae834e40897751585a342e4)
+ * Config saved to config.json and https://gist.github.com/52d8335f5ae834e40897751585a342e4
  */
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
@@ -246,7 +246,9 @@ figure {
 img {
   vertical-align: middle;
 }
-.img-responsive {
+.img-responsive,
+.thumbnail > img,
+.thumbnail a > img {
   display: block;
   max-width: 100%;
   height: auto;
@@ -965,40 +967,31 @@ hr {
     margin-left: 0%;
   }
 }
-.fade {
-  opacity: 0;
-  -webkit-transition: opacity 0.15s linear;
-  -o-transition: opacity 0.15s linear;
-  transition: opacity 0.15s linear;
-}
-.fade.in {
-  opacity: 1;
-}
-.collapse {
-  display: none;
-}
-.collapse.in {
+.thumbnail {
   display: block;
+  padding: 4px;
+  margin-bottom: 20px;
+  line-height: 1.42857143;
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+  -webkit-transition: border 0.2s ease-in-out;
+  -o-transition: border 0.2s ease-in-out;
+  transition: border 0.2s ease-in-out;
 }
-tr.collapse.in {
-  display: table-row;
+.thumbnail > img,
+.thumbnail a > img {
+  margin-left: auto;
+  margin-right: auto;
 }
-tbody.collapse.in {
-  display: table-row-group;
+a.thumbnail:hover,
+a.thumbnail:focus,
+a.thumbnail.active {
+  border-color: #337ab7;
 }
-.collapsing {
-  position: relative;
-  height: 0;
-  overflow: hidden;
-  -webkit-transition-property: height, visibility;
-  -o-transition-property: height, visibility;
-     transition-property: height, visibility;
-  -webkit-transition-duration: 0.35s;
-  -o-transition-duration: 0.35s;
-     transition-duration: 0.35s;
-  -webkit-transition-timing-function: ease;
-  -o-transition-timing-function: ease;
-     transition-timing-function: ease;
+.thumbnail .caption {
+  padding: 9px;
+  color: #333333;
 }
 .clearfix:before,
 .clearfix:after,

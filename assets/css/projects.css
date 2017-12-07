@@ -10,19 +10,15 @@ body {
     margin: 0;
     padding: 0;
     width: 100%;
-}
 
-body {
-    align-items: center;
+	align-items: center;
     display: flex;
     font-family: "Raleway", sans-serif;
     justify-content: center;
 
-
     background-image: url(../images/background.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-
 }
 
 *,
@@ -30,25 +26,28 @@ body {
 *::after {
     box-sizing: inherit
 }
-a,
-a:link,
-a:active {
+
+.myName,
+.myName:link,
+.myName:active {
     color: #000;
     font-weight: 600;
     text-decoration: none
 }
-a:hover {
+.myName:hover {
     border-bottom: 2px solid #0D29FE;
     color: #000
 }
 
-
 .container {
 	width: 100%;
+	text-align: center;
+	height: 100%
 }
 
+
 .myName {
-    margin-left: 0;
+	margin-left: 0;
 	font-size: 7vw;
 	font-weight: bold;
 	color: black;
@@ -57,10 +56,18 @@ a:hover {
 	margin-top: 0;
 }
 
-.myDescription {
-	font-size: 30px;
-    color: black;
-    text-shadow: 0 1px white;
+.projectImages {
+	overflow: hidden;
+}
+
+.wrapImg {
+	margin-bottom: 10px;
+}
+
+.image {
+	margin: 0 auto;
+	height: auto;
+	width: auto;
 }
 
 .raptorButton {
@@ -68,6 +75,7 @@ a:hover {
     color: white;
     padding: 15px 32px;
     margin-top: 10px;
+    margin-bottom: 30px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -76,11 +84,51 @@ a:hover {
     background-color: black;
 }
 
-@media screen and (max-width: 720px) {
-    .container {
-        height: 100%;
-    }
 
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.wrapImg:hover .image {
+  opacity: 0.3;
+}
+
+.wrapImg:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: black;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+
+
+@media screen and (min-width: 1000px) {
+	.wrapImg {
+		width: 23%;
+	}
+}
+
+@media screen and (max-width: 640px) {
     .raptorButton {
         margin-bottom: 50px;
         margin-right: 15px;
